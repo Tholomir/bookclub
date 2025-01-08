@@ -1,15 +1,17 @@
 /* Global Styles */
 body {
   font-family: 'Lato', sans-serif; /* Secondary font for body text */
-  background-color: #FFF5E1; /* Cream */
-  color: #800020; /* Rich Burgundy */
+  background-color: #FFF5E1; /* Base background: Cream */
+  color: #800020; /* Primary: Rich Burgundy */ 
+  line-height: 1.6;
   margin: 0;
   padding: 0;
 }
 
 h1, h2, h3 {
   font-family: 'Playfair Display', serif; /* Primary font for headings */
-  color: #FFD700; /* Gold */
+  color: #FFD700; /* Primary: Gold */
+  margin-bottom: 0.5em; 
 }
 
 h1 {
@@ -26,31 +28,37 @@ h3 {
 
 p {
   font-size: 1.2em;
-  line-height: 1.6;
 }
 
-a {
-  color: #98FF98; /* Mint Green */
+a { 
+  color: #800020; /* Primary: Rich Burgundy */
   text-decoration: none;
 }
 
 a:hover {
-  text-decoration: underline;
+  color: #98FF98; /* Secondary: Mint Green */
 }
 
 button {
-  background-color: #89CFF0; /* Baby Blue */
-  color: white;
+  background-color: #800020; /* Primary: Rich Burgundy */
+  color: #FFF5E1; /* Base background: Cream */
   border: none;
   padding: 10px 20px;
-  border-radius: 5px;
+  border-radius: 8px;
   cursor: pointer;
-  font-family: 'Pacifico', cursive; /* Handwritten font for accents */
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  transition: background-color 0.3s ease; 
+}
+
+button:hover {
+  background-color: #98FF98; /* Secondary: Mint Green */
+  color: #800020; /* Primary: Rich Burgundy */
 }
 
 /* Utility Classes */
 .ornate-frame {
-  border: 5px solid #FFD700; /* Gold */
+  border: 5px solid #FFD700; /* Primary: Gold */
   padding: 20px;
 }
 
@@ -68,4 +76,42 @@ button {
 
 .rounded-corners {
   border-radius: 10px;
+  overflow: hidden; /* Prevents content from overflowing rounded corners */
+}
+
+/* Card Styles */
+.card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+/* Book Card Styles */
+.book-card {
+  display: flex;  
+  align-items: center; 
+}
+
+.book-card img {
+  width: 100px;
+  height: 150px;
+  object-fit: cover;
+  margin-right: 20px;
+  border-radius: 5px; 
+}
+
+/* Discussions List Styles */
+.discussion-list-item {
+  background-color: #f9f9f9; 
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* Quick Action Buttons */
+.quick-action-buttons {
+  display: flex;
+  justify-content: space-around; 
 }
