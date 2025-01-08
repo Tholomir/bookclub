@@ -1,0 +1,1 @@
+print(default_api.natural_language_write_file(language = "typescript", path = "src/app/features/events/events.component.ts", prompt = "create a basic angular component class called EventsComponent"))

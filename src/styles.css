@@ -1,1 +1,71 @@
-/* You can add global styles to this file, and also import other style files */
+/* Global Styles */
+body {
+  font-family: 'Lato', sans-serif; /* Secondary font for body text */
+  background-color: #FFF5E1; /* Cream */
+  color: #800020; /* Rich Burgundy */
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif; /* Primary font for headings */
+  color: #FFD700; /* Gold */
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 2.5em;
+}
+
+h3 {
+  font-size: 2em;
+}
+
+p {
+  font-size: 1.2em;
+  line-height: 1.6;
+}
+
+a {
+  color: #98FF98; /* Mint Green */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+button {
+  background-color: #89CFF0; /* Baby Blue */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Pacifico', cursive; /* Handwritten font for accents */
+}
+
+/* Utility Classes */
+.ornate-frame {
+  border: 5px solid #FFD700; /* Gold */
+  padding: 20px;
+}
+
+.floral-illustration {
+  /* Placeholder for floral illustration styles */
+}
+
+.bookshelf-background {
+  /* Placeholder for bookshelf background styles */
+}
+
+.nature-icon {
+  /* Placeholder for nature icon styles */
+}
+
+.rounded-corners {
+  border-radius: 10px;
+}
